@@ -3,20 +3,32 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yash Mardikar | AWS Software Development Engineer</title>
-    <meta name="description" content="AWS software development engineer Yash Mardikar specializes in microservices, serverless platforms, and healthcare technology innovation." />
+    <title>Yash Mardikar | Cloud Software Development Engineer</title>
+    <meta name="description" content="Cloud software development engineer Yash Mardikar specializes in cloud-native microservices, serverless platforms, and adaptable engineering leadership across industries." />
     <link rel="canonical" href="https://yashmardikar.github.io/" />
-    <meta property="og:title" content="Yash Mardikar | AWS Software Development Engineer" />
-    <meta property="og:description" content="Explore Yash Mardikar's experience building AWS microservices, serverless delivery, and healthcare platform modernization." />
+    <meta property="og:title" content="Yash Mardikar | Cloud Software Development Engineer" />
+    <meta property="og:description" content="Explore Yash Mardikar's experience building cloud-native microservices, serverless delivery, and adaptable engineering solutions across industries." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://yashmardikar.github.io/" />
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/46421368?v=4" />
     <meta property="og:image:alt" content="Portrait of software development engineer Yash Mardikar" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Yash Mardikar | AWS Software Development Engineer" />
-    <meta name="twitter:description" content="Seattle-based software development engineer delivering AWS microservices, cloud modernization, and scalable healthcare solutions." />
+    <meta name="twitter:title" content="Yash Mardikar | Cloud Software Development Engineer" />
+    <meta name="twitter:description" content="Software development engineer delivering multi-cloud microservices, modernization, and scalable solutions across industries." />
     <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/46421368?v=4" />
     <meta name="twitter:image:alt" content="Portrait of software development engineer Yash Mardikar" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S63N45TH2C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S63N45TH2C', { send_page_view: false });
+        gtag('event', 'page_view', {
+            page_title: document.title,
+            page_path: window.location.pathname,
+        });
+    </script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -81,8 +93,12 @@
             </nav>
             <div class="hero-content">
                 <div>
-                    <h1>Hi, I'm <span>Yash Mardikar</span>, an AWS-focused software development engineer.</h1>
-                    <p class="tagline">Seattle-based software development engineer specializing in enterprise microservices, serverless modernization, and high-impact healthcare platform delivery.</p>
+                    <h1>
+                        <span class="hero-intro">Hi, I'm</span>
+                        <span class="hero-name">Yash Mardikar</span>
+                        <span class="hero-role">a cloud platform software development engineer.</span>
+                    </h1>
+                    <p class="tagline">Software development engineer specializing in enterprise microservices, serverless modernization, and building adaptable solutions across industries.</p>
                     <div class="hero-actions">
                         <a class="btn primary" href="mailto:ymardika+portfolio@asu.edu">Let's Connect</a>
                         <a class="btn" href="https://www.linkedin.com/in/yashmardikar" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -90,9 +106,10 @@
                     </div>
                 </div>
                 <div class="hero-card">
-                    <p class="location">📍 Seattle, WA</p>
+                    <p class="location">📍 Seattle, WA &bull; Open to relocation across the U.S.</p>
                     <p><strong>Email:</strong> <a href="mailto:ymardika+portfolio@asu.edu">ymardika+portfolio@asu.edu</a></p>
                     <p><strong>Current Role:</strong> Software Development Engineer @ Amazon Web Services</p>
+                    <p><strong>Beyond work:</strong> I enjoy sci-fi movies, long runs, and daily meditation.</p>
                 </div>
             </div>
         </div>
@@ -125,7 +142,7 @@
 
         <section class="section section-alt" id="experience">
             <div class="container">
-                <h2>Professional Experience Delivering AWS Microservices</h2>
+                <h2>Professional Experience Delivering Cloud Microservices</h2>
                 <article class="experience-card">
                     <header>
                         <div>
@@ -203,8 +220,9 @@
             <div class="container">
                 <h2>Leadership & Community Initiatives</h2>
                 <ul class="leadership-list">
-                    <li>Rotaract Club of WCE Sangli &mdash; Organized blood donation drives and community events supporting local orphanages.</li>
                     <li>Art of Living Volunteer &mdash; Coordinated logistics for the 2023 World Culture Festival in Washington, D.C., welcoming global attendees.</li>
+                    <li>Amazon Community Together &mdash; Packed disaster relief supplies and back-to-school kits alongside Amazon volunteers, supporting families during crisis response and recovery.</li>
+                    <li>Rotaract Club of WCE Sangli &mdash; Organized blood donation drives and community events supporting local orphanages.</li>
                     <li>Electronics Engineering Student Association &mdash; Served as editor-in-chief, managing editorial content and PR initiatives.</li>
                 </ul>
             </div>
@@ -227,6 +245,62 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        const analytics = {
+            startTime: performance.now(),
+            trackedSections: new Set(),
+        };
+
+        function trackEvent(eventName, params = {}) {
+            if (typeof gtag === 'function') {
+                gtag('event', eventName, params);
+            }
+        }
+
+        document.querySelectorAll('.btn, .nav-links a, .logo').forEach((element) => {
+            element.addEventListener('click', () => {
+                const label = element.textContent.trim() || element.getAttribute('href');
+                trackEvent('click', {
+                    event_category: 'engagement',
+                    event_label: label,
+                });
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && entry.target.id && !analytics.trackedSections.has(entry.target.id)) {
+                    analytics.trackedSections.add(entry.target.id);
+                    trackEvent('section_view', {
+                        event_category: 'engagement',
+                        event_label: entry.target.id,
+                    });
+                }
+            });
+        }, { threshold: 0.4 });
+
+        document.querySelectorAll('section[id]').forEach((section) => observer.observe(section));
+
+        function sendTimeSpent() {
+            const elapsedMs = Math.round(performance.now() - analytics.startTime);
+            trackEvent('time_spent', {
+                event_category: 'engagement',
+                value: Math.round(elapsedMs / 1000),
+                elapsed_ms: elapsedMs,
+            });
+        }
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'hidden') {
+                sendTimeSpent();
+            }
+        });
+
+        window.addEventListener('beforeunload', sendTimeSpent, { once: true });
+
+        setInterval(() => {
+            sendTimeSpent();
+        }, 60000);
     </script>
 </body>
 </html>
