@@ -10,6 +10,6 @@ Open `index.html` in your browser to preview the site locally. All assets are se
 
 1. Push the contents of this repository to a GitHub repository named `<username>.github.io`.
 2. Enable GitHub Pages from the repository settings (if it is not already active by default).
-3. Visit `https://<username>.github.io` to view the live site.
+3. Visit `https://yashmardikar.github.io` to view the live site.
 
 The site is static and requires no build step.
