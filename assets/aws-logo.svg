@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="awsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9900" />
+      <stop offset="100%" stop-color="#FF7A00" />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="60" fill="url(#awsGradient)" />
+  <text x="50%" y="52%" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="700" fill="#ffffff">aws</text>
+  <path d="M28 78c12 8 24 12 32 12s20-4 32-12" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+</svg>

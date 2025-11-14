@@ -261,20 +261,19 @@ a:focus-visible {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: var(--white);
+    background: rgba(15, 23, 42, 0.05);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(15, 23, 42, 0.1);
+    border: 1px solid rgba(15, 23, 42, 0.08);
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
-    padding: 0.5rem;
 }
 
 .company-logo img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .company {
@@ -377,10 +376,60 @@ a:focus-visible {
     color: var(--text-secondary);
 }
 
-.leadership-list {
-    list-style: none;
+#leadership {
+    background: linear-gradient(135deg, rgba(31, 111, 235, 0.08), rgba(8, 13, 26, 0.02));
+}
+
+.leadership-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.leadership-card {
+    display: flex;
     gap: 1rem;
+    align-items: flex-start;
+    padding: 1.75rem;
+    border-radius: var(--radius);
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.leadership-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(31, 111, 235, 0.14), rgba(8, 13, 26, 0.1));
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    border-radius: inherit;
+}
+
+.leadership-card:hover::before,
+.leadership-card:focus-within::before {
+    opacity: 1;
+}
+
+.leadership-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.leadership-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.leadership-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.leadership-card p {
     color: var(--text-secondary);
 }
 
