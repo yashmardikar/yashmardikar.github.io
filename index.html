@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yash Mardikar | Software Development Engineer</title>
     <meta name="description" content="Software development engineer Yash Mardikar specializes in cloud-native microservices, serverless platforms, and adaptable engineering leadership across industries." />
-    <link rel="canonical" href="https://yashmardikar.github.io/" />
+    <link rel="canonical" href="https://yash.mardikar.in/" />
     <meta property="og:title" content="Yash Mardikar | Software Development Engineer" />
     <meta property="og:description" content="Explore Yash Mardikar's experience building cloud-native microservices, serverless delivery, and adaptable engineering solutions across industries." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yashmardikar.github.io/" />
+    <meta property="og:url" content="https://yash.mardikar.in/" />
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/46421368?v=4" />
     <meta property="og:image:alt" content="Portrait of software development engineer Yash Mardikar" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -79,32 +79,39 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#top" class="logo">Yash Mardikar</a>
+            <div class="nav-links">
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M12 17a5 5 0 100-10 5 5 0 000 10z"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
     <header class="hero" id="top">
         <div class="container">
-            <nav class="nav">
-                <a href="#top" class="logo">YM</a>
-                <div class="nav-links">
-                    <a href="#experience">Experience</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#education">Education</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </nav>
             <div class="hero-content">
                 <div>
                     <h1>
                         <span class="hero-intro">Hi, I'm</span>
                         <span class="hero-name">Yash Mardikar</span>
-                        <span class="hero-role">a platform software development engineer.</span>
+                        <span class="hero-role">Software development engineer.</span>
                     </h1>
-                    <p class="tagline">Software development engineer specializing in enterprise microservices, serverless modernization, and building adaptable solutions across industries.</p>
+                    <p class="tagline">SDE specializing in enterprise microservices, serverless modernization, and building adaptable solutions across industries.</p>
                     <div class="hero-actions">
                         <a class="btn primary" href="https://www.linkedin.com/in/yashmardikar" target="_blank" rel="noreferrer noopener">Let's Connect</a>
                     </div>
                 </div>
                 <div class="hero-card">
-                    <p class="location">📍 Seattle, WA &bull; Open to relocation across the U.S.</p>
+                    <p class="location">📍 Seattle, WA &bull; Open to relocation</p>
                     <p><strong>Email:</strong> <a href="mailto:ymardika+portfolio@asu.edu">ymardika@asu.edu</a></p>
                     <p><strong>Current Role:</strong> Software Development Engineer @ Amazon Web Services</p>
                     <p><strong>Beyond work:</strong> I enjoy sci-fi movies and long runs.</p>
@@ -145,7 +152,7 @@
                     <header>
                         <div class="company-info">
                             <span class="company-logo">
-                                <img src="assets/aws-logo.svg" alt="Amazon Web Services logo" loading="lazy" />
+                                <img src="assets/aws-logo.png" alt="Amazon Web Services logo" loading="lazy" />
                             </span>
                             <div>
                                 <h3>Software Development Engineer</h3>
@@ -168,7 +175,7 @@
                     <header>
                         <div class="company-info">
                             <span class="company-logo">
-                                <img src="assets/infosys-logo.svg" alt="Infosys logo" loading="lazy" />
+                                <img src="assets/infosys-logo.png" alt="Infosys logo" loading="lazy" />
                             </span>
                             <div>
                                 <h3>Software Developer</h3>
@@ -194,14 +201,24 @@
                     <article class="project-card">
                         <h3>Stroke Prediction with Spark</h3>
                         <p>Class project leveraging PySpark on Databricks to achieve 95.5% accuracy predicting stroke risk. Responsible for data preparation with Spark SQL, model training, and validation.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
                     </article>
                     <article class="project-card">
                         <h3>Airline Customer Satisfaction</h3>
                         <p>Experimented with multiple classification algorithms to predict customer satisfaction with 92% accuracy using Python and scikit-learn.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </div>
                     </article>
                     <article class="project-card">
                         <h3>IT Asset Management Platform</h3>
                         <p>Full-stack web application built with Express.js and MySQL featuring agile delivery, ERD modeling, and comprehensive project documentation.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -241,36 +258,61 @@
         <section class="section" id="leadership">
             <div class="container">
                 <h2>Leadership & Community Initiatives</h2>
-                <div class="leadership-grid">
-                    <article class="leadership-card">
-                        <span class="leadership-icon" aria-hidden="true">🌍</span>
-                        <div>
-                            <h3>Art of Living Volunteer</h3>
-                            <p>Coordinated logistics for the 2023 World Culture Festival in Washington, D.C., welcoming global attendees and streamlining on-site check-ins.</p>
+                <article class="experience-card">
+                    <header>
+                        <div class="company-info">
+                            <span class="company-logo">
+                                <img src="assets/aol-logo.png" alt="Art of Living logo" loading="lazy" />
+                            </span>
+                            <div>   
+                                <h3>Art of Living Volunteer</h3>
+                            </div>
                         </div>
-                    </article>
-                    <article class="leadership-card">
-                        <span class="leadership-icon" aria-hidden="true">🤝</span>
-                        <div>
-                            <h3>Amazon Community Together</h3>
-                            <p>Packed disaster relief supplies and back-to-school kits alongside Amazon volunteers, supporting families through crisis response and recovery.</p>
+                    </header>
+                    <p>Coordinated logistics for the 2023 World Culture Festival in Washington, D.C., welcoming global attendees and streamlining on-site check-ins.</p>
+                </article>
+
+                <article class="experience-card">
+                    <header>
+                        <div class="company-info">
+                            <span class="company-logo" style="background-color: #ec8a34;">
+                                <img src="assets/amazon-volunteer-logo.png" alt="Amazon Community Together Logo" loading="lazy" />
+                            </span>
+                            <div>
+                                <h3>Amazon Community Together</h3>
+                            </div>
                         </div>
-                    </article>
-                    <article class="leadership-card">
-                        <span class="leadership-icon" aria-hidden="true">🩸</span>
-                        <div>
-                            <h3>Rotaract Club of WCE Sangli</h3>
-                            <p>Organized blood donation drives and community events that funded nutrition and education programs for local orphanages.</p>
+                    </header>
+                    <p>Packed disaster relief supplies and back-to-school kits alongside Amazon volunteers, supporting families through crisis response and recovery.</p>
+                </article>
+
+                <article class="experience-card">
+                    <header>
+                        <div class="company-info">
+                            <span class="company-logo">
+                                <img src="assets/rotaract-logo.png" alt="Rotaract Club Logo" loading="lazy" />
+                            </span>
+                            <div>
+                                <h3>Rotaract Club of WCE Sangli</h3>
+                            </div>
                         </div>
-                    </article>
-                    <article class="leadership-card">
-                        <span class="leadership-icon" aria-hidden="true">📰</span>
-                        <div>
-                            <h3>Electronics Engineering Student Association</h3>
-                            <p>Served as editor-in-chief, leading a 10-member editorial team to deliver campus-wide communications and PR initiatives.</p>
+                    </header>
+                    <p>Organized blood donation drives and community events that funded nutrition and education programs for local orphanages.</p>
+                </article>
+
+                <article class="experience-card">
+                    <header>
+                        <div class="company-info">
+                            <span class="company-logo" style="font-size: 2rem;">
+                                📰
+                            </span>
+                            <div>
+                                <h3>Electronics Engineering Student Association</h3>
+                            </div>
                         </div>
-                    </article>
-                </div>
+                    </header>
+                    <p>Served as editor-in-chief, leading a 3-member editorial team to deliver campus-wide communications and PR initiatives during my undergraduate studies.</p>
+                </article>
             </div>
         </section>
     </main>
@@ -285,12 +327,48 @@
                 <a class="btn primary" href="mailto:ymardika@asu.edu">Email Me</a>
                 <a class="btn visually-hidden" href="https://calendly.com/yash-mardikar" target="_blank" rel="noreferrer" tabindex="-1">Schedule a Chat</a>
             </div>
-            <p class="copyright">&copy; <span id="year"></span> Yash Mardikar. Crafted for GitHub Pages.</p>
+            <p class="copyright">&copy; <span id="year"></span> Yash Mardikar.</p>
         </div>
     </footer>
 
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const sunIcon = themeToggle.querySelector('.sun-icon');
+        const moonIcon = themeToggle.querySelector('.moon-icon');
+        
+        // Check for saved theme preference or system preference
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            if (newTheme === 'dark') {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            } else {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            }
+        });
+
 
         const analytics = {
             startTime: performance.now(),
@@ -326,6 +404,52 @@
         }, { threshold: 0.4 });
 
         document.querySelectorAll('section[id]').forEach((section) => observer.observe(section));
+
+        // Scroll to Top Logic
+        const scrollTopBtn = document.getElementById('scroll-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Logo Merge Animation
+        const logo = document.querySelector('.logo');
+        const heroName = document.querySelector('.hero-name');
+        const nav = document.querySelector('.nav');
+
+        function handleScrollAnimation() {
+            if (!heroName || !logo) return;
+
+            const heroNameRect = heroName.getBoundingClientRect();
+            const navHeight = nav ? nav.offsetHeight : 0;
+            
+            // Trigger point: when hero name is about to cross the nav
+            // We use a threshold of navHeight + some buffer
+            const threshold = navHeight + 20;
+
+            if (heroNameRect.bottom < threshold) {
+                logo.classList.add('visible');
+                heroName.classList.add('hidden');
+            } else {
+                logo.classList.remove('visible');
+                heroName.classList.remove('hidden');
+            }
+        }
+
+        window.addEventListener('scroll', handleScrollAnimation);
+        // Initial check
+        handleScrollAnimation();
 
         function sendTimeSpent() {
             const elapsedMs = Math.round(performance.now() - analytics.startTime);
